@@ -1,4 +1,4 @@
 #!/bin/sh
 
-docker build --rm=true --tag="nderwin/docker-jre:8u45" .
+docker build --rm=true --tag="nderwin/docker-jre:latest" .
 

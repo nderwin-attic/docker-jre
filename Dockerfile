@@ -9,6 +9,15 @@ ENV	JAVA_HOME /opt/jre1.8.0_45
 ENV	JAVA_VERSION 8u45
 ENV	JAVA_BUILD_VERSION b14
 
-RUN	cd /opt && curl --location --cookie oraclelicense=accept-securebackup-cookie http://download.oracle.com/otn-pub/java/jdk/$JAVA_VERSION-$JAVA_BUILD_VERSION/jre-$JAVA_VERSION-linux-x64.tar.gz | tar zx
+WORKDIR	/opt
+RUN	curl --location --cookie oraclelicense=accept-securebackup-cookie http://download.oracle.com/otn-pub/java/jdk/$JAVA_VERSION-$JAVA_BUILD_VERSION/jre-$JAVA_VERSION-linux-x64.tar.gz | tar zx
 RUN	ln -s $JAVA_HOME/bin/java /usr/bin/java
 
+# create a non-root user for shell logins
+RUN	groupadd -r jre && useradd -r -m -g jre jre
+
+USER	jre
+
+WORKDIR	/home/jre
+
+CMD ["/bin/bash"]
