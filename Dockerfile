@@ -5,8 +5,8 @@ MAINTAINER	Nathan Erwin <nathan.d.erwin@gmail.com>
 RUN	DEBIAN_FRONTEND=noninteractive apt-get update && apt-get -y install curl
 
 # install the JRE
-ENV	JAVA_HOME /opt/jre1.8.0_91
-ENV	JAVA_VERSION 8u91
+ENV	JAVA_HOME /opt/jre1.8.0_92
+ENV	JAVA_VERSION 8u92
 ENV	JAVA_BUILD_VERSION b14
 
 RUN	cd /opt && curl --location --cookie oraclelicense=accept-securebackup-cookie http://download.oracle.com/otn-pub/java/jdk/$JAVA_VERSION-$JAVA_BUILD_VERSION/jre-$JAVA_VERSION-linux-x64.tar.gz | tar zx
