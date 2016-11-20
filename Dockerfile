@@ -5,7 +5,7 @@ MAINTAINER	Nathan Erwin <nathan.d.erwin@gmail.com>
 RUN	DEBIAN_FRONTEND=noninteractive apt-get update && apt-get -y install curl
 
 # install the JRE
-ENV	JAVA_HOME /opt/jre1.8.0_92
+ENV	JAVA_HOME /opt/jre1.8.0_112
 ENV	JAVA_VERSION 8u112
 ENV	JAVA_BUILD_VERSION b15
 
