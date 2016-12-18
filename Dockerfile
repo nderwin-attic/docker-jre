@@ -1,6 +1,6 @@
 FROM	debian:jessie
 
-MAINTAINER	Nathan Erwin <nathan.d.erwin@gmail.com>
+LABEL	Author="Nathan Erwin <nathan.d.erwin@gmail.com>"
 
 RUN	DEBIAN_FRONTEND=noninteractive apt-get update && apt-get -y install curl
 
