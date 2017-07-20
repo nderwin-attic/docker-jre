@@ -1,6 +1,6 @@
 ## Docker JRE Image
 
-This image creates a base system with the latest Oracle JRE installed. 
+This image creates a basic Debian image with the latest Oracle JRE installed. 
 
 ## Building
 
