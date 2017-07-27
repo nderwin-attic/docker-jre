@@ -4,7 +4,7 @@ This image creates a basic Debian image with the latest Oracle JRE installed.
 
 ## Building
 
-run the build.sh file
+`docker-compose build`
 
 ## References
 
