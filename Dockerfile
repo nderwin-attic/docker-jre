@@ -1,12 +1,12 @@
-FROM	debian:jessie
+FROM	debian:stretch
 
 LABEL	Author="Nathan Erwin <nathan.d.erwin@gmail.com>"
 
 # install the JRE
-ENV	JAVA_HOME=/opt/jre1.8.0_152 \
-	JAVA_VERSION=8u152 \
-	JAVA_BUILD_VERSION=b16 \
-	TOKEN=aa0333dd3019491ca4f6ddbe78cdb6d0
+ENV	JAVA_HOME=/opt/jre1.8.0_161 \
+	JAVA_VERSION=8u161 \
+	JAVA_BUILD_VERSION=b12 \
+	TOKEN=2f38c3b165be4555a1fa6e98c45e0808
 
 RUN	DEBIAN_FRONTEND=noninteractive apt-get update \
 	&& apt-get -y install curl \
