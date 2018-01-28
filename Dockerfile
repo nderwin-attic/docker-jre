@@ -3,10 +3,10 @@ FROM	debian:jessie
 LABEL	Author="Nathan Erwin <nathan.d.erwin@gmail.com>"
 
 # install the JRE
-ENV	JAVA_HOME=/opt/jre1.8.0_144 \
-	JAVA_VERSION=8u144 \
-	JAVA_BUILD_VERSION=b01 \
-	TOKEN=090f390dda5b47b9b721c7dfaa008135
+ENV	JAVA_HOME=/opt/jre1.8.0_161 \
+	JAVA_VERSION=8u161 \
+	JAVA_BUILD_VERSION=b12 \
+	TOKEN=2f38c3b165be4555a1fa6e98c45e0808
 
 RUN	DEBIAN_FRONTEND=noninteractive apt-get update \
 	&& apt-get -y install curl \
