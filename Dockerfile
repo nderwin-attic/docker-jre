@@ -1,4 +1,4 @@
-FROM	debian:jessie
+FROM	debian:stretch
 
 LABEL	Author="Nathan Erwin <nathan.d.erwin@gmail.com>"
 
